@@ -1,0 +1,47 @@
+🎬 React Assignment – Unit 1
+Project Title: Favorite Movie Banner
+
+🧠 Objective
+Build a simple React application that displays a banner for your favorite movie using only Unit 1 concepts:
+
+▫ JSX basics
+▫ React environment setup
+▫ Embedding expressions
+▫ Single Page App behavior (no page reloads)
+
+📦 Requirements
+Your app must include:
+
+✅ Movie Title (use a variable)
+✅ Year of Release (use a variable)
+✅ A tagline (1 line)
+✅ A paragraph on why you love this movie
+✅ An embedded JavaScript expression (e.g. “It’s been X years since release”)
+
+🛠️ Instructions
+1. Create a New React App
+Run the following commands:
+//
+npx create-react-app movie-banner-assignment
+cd movie-banner-assignment
+npm start
+//
+
+2. Clean Up the Boilerplate
+In src/, delete unnecessary files:
+
+App.test.js, logo.svg, reportWebVitals.js, setupTests.js
+
+3. Edit App.js
+Replace the contents of App.js with your banner code. You should use:
+
+▫ JSX
+▫ const variables
+▫ Embedded expressions like {2025 - year}
+
+4. Style It 
+You may add basic styling in App.css. 
+Keep the layout readable and centered.
+
+💡 Tip:
+Pick a movie you really like — your passion will reflect in how you write the description! And make sure your app compiles without any errors.

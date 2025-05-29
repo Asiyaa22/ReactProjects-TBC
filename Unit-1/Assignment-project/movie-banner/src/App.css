@@ -1,0 +1,9 @@
+.App {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 3rem;
+  font-family: 'sans-serif';
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}

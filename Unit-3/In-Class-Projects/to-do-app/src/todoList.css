@@ -1,0 +1,58 @@
+
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.todo-list {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  font-family: Arial;
+}
+
+.checkListStatus {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.todo-list li.checkListStatus {
+  text-decoration: line-through;
+  color: #000000;
+}
+
+.todo-list li button {
+  background-color: #dc3545;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 5px;
+}

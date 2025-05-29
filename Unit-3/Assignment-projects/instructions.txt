@@ -1,0 +1,65 @@
+📄 React Assignment — Unit 2
+🔖 Project Title: Team Member Cards
+
+📚 Topics Covered
+
+▫ Event Handling in JSX
+▫ Passing Parameters to Event Handlers
+▫ Conditional Rendering using if-else, Ternary, and &&
+▫ Rendering Lists with .map()
+▫ Keys in Lists
+▫ useState for managing dynamic state
+▫ Props & Component Reusability
+
+🧠 Objective
+Build a simple React app that displays cards for each team member, 
+allows toggling their availability status, and shows a count of 
+how many are currently available.
+
+
+📂 Folder Structure
+src/
+│
+├── components/
+│   └── TeamMember.js
+│
+├── App.js
+└── App.css
+
+🛠️ Features to Implement
+
+👉 Display Cards for Each Team Member
+▫ Use a TeamMember component.
+▫ Each card should show:
+  Name
+  Role
+  Availability status ✅/❌
+
+👉 Toggle Availability Button
+
+▫ Add a button inside each card: Toggle Availability
+▫ Clicking should toggle the member’s availability
+▫ Update UI accordingly using conditional rendering
+
+👉 Show Total Availability Count
+
+▫ At the top of the page, display something like:
+✅ Available: 2 / 3
+
+👉 Dynamic Rendering of Members
+
+▫ Members should be stored in an array (with state)
+▫ Use .map() to render cards dynamically
+▫ Use a unique key for each rendered component 
+
+🖼️ Sample Output
+🔗 
+
+🎨 Basic CSS Guidelines (optional but encouraged)
+▫ Use card-style borders for each member
+▫ Add some spacing & padding
+
+
+🧪 Bonus (Optional)
+▫ Show total number of available team members at the top
+▫ Add a prop like profileImg (URL) and display image in each card

@@ -1,0 +1,32 @@
+📘 Project Name: Notes App
+
+🎯 Objective:
+To create a basic Notes App using only Unit 2 topics – components, props, reusability, and state management with useState. This project will help you understand how data is managed and passed between components in React.
+
+🧠 Concepts Covered (Unit 2):
+▫ Functional vs Class Components (Only functional used)
+▫ Creating and Using Components
+▫ Props in Components
+▫ Reusability and Composition
+▫ useState Hook
+▫ Updating State
+▫ State vs Props
+
+🛠️ Features to Implement:
+▫ A dummy navbar at the top with just a heading text: "Nav".
+▫ A collection of note cards displayed in a grid layout.
+▫ Each note card should display text passed through props.
+▫ An “Add Note” button (bottom-right corner) that adds a new note when clicked.
+▫ Notes should be managed using useState.
+
+📂 Component Structure:
+src/
+│
+├── App.js              # Main app with state and note array
+├── notesApp.css        # Styling for navbar, notes, and add button
+└── components/
+    ├── Navbar.js       # Functional component for navbar
+    └── Note.js         # Reusable component for each note
+
+Output Link
+🔗 
