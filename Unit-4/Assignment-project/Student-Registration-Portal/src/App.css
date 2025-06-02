@@ -1,3 +1,4 @@
+/* Main container with max width and centered content */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +6,25 @@
   text-align: center;
 }
 
+/* Logo image styling */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
+/* Hover effect for logo: blue drop shadow */
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
+/* Hover effect for React logo: React blue drop shadow */
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Keyframes for spinning the logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +34,19 @@
   }
 }
 
+/* Apply spinning animation to the 2nd anchor’s logo when user allows animations */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Card component padding */
 .card {
   padding: 2em;
 }
 
+/* Style for “read the docs” link/text */
 .read-the-docs {
   color: #888;
 }

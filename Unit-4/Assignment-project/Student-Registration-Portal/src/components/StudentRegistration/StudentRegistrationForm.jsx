@@ -1,33 +1,48 @@
+// Importing React and useState hook
 import React, { useState } from 'react';
+// Importing CSS styles for this component
 import './StudentRegistrationForm.css';
 
+// Defining a functional React component
 function StudentRegistrationForm() {
+  // State to manage the form input values
   const [form, setForm] = useState({
     fullName: '',
     email: '',
     phone: '',
     course: '',
     gender: '',
-    termsAgreed: false,
+    termsAgreed: false, // Checkbox value for agreeing to terms
   });
 
+  // State to store the list of registered students
   const [students, setStudents] = useState([]);
+  // State to show any validation error message
   const [error, setError] = useState('');
+  // State to show success message
   const [success, setSuccess] = useState('');
 
+  // This function runs whenever any input in the form is changed
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+    // Update the form state based on the input type (checkbox or other)
     setForm({
       ...form,
       [name]: type === 'checkbox' ? checked : value,
     });
   };
 
+  // Utility function to validate email format using regular expression
   const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  // Utility function to validate if the phone number is 10 digits
   const validatePhone = (phone) => /^\d{10}$/.test(phone);
 
+  // This function runs when the form is submitted
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevents the page from refreshing on form submit
+
+    // Check if any field is empty or terms not agreed
     if (
       !form.fullName ||
       !form.email ||
@@ -41,19 +56,24 @@ function StudentRegistrationForm() {
       return;
     }
 
+    // Validate email format
     if (!validateEmail(form.email)) {
       setError('Invalid email format.');
       setSuccess('');
       return;
     }
 
+    // Validate phone number
     if (!validatePhone(form.phone)) {
       setError('Phone number must be 10 digits.');
       setSuccess('');
       return;
     }
 
+    // If all validations pass, add the form data to the students list
     setStudents([...students, form]);
+
+    // Reset the form to initial state
     setForm({
       fullName: '',
       email: '',
@@ -62,6 +82,8 @@ function StudentRegistrationForm() {
       gender: '',
       termsAgreed: false,
     });
+
+    // Clear error message and show success message
     setError('');
     setSuccess('Student registered successfully!');
   };
@@ -69,6 +91,8 @@ function StudentRegistrationForm() {
   return (
     <div className="form-container">
       <h2>Student Registration Portal</h2>
+      
+      {/* Registration Form Starts Here */}
       <form onSubmit={handleSubmit} className="registration-form">
         <label>
           Full Name:
@@ -79,6 +103,7 @@ function StudentRegistrationForm() {
             onChange={handleChange}
           />
         </label>
+
         <label>
           Email:
           <input
@@ -88,6 +113,7 @@ function StudentRegistrationForm() {
             onChange={handleChange}
           />
         </label>
+
         <label>
           Phone Number:
           <input
@@ -97,6 +123,7 @@ function StudentRegistrationForm() {
             onChange={handleChange}
           />
         </label>
+
         <label>
           Course:
           <input
@@ -106,11 +133,33 @@ function StudentRegistrationForm() {
             onChange={handleChange}
           />
         </label>
+
+        {/* Radio buttons for gender selection */}
         <div className="gender-group">
           Gender:
-          <label><input type="radio" name="gender" value="Male" checked={form.gender === 'Male'} onChange={handleChange} /> Male</label>
-          <label><input type="radio" name="gender" value="Female" checked={form.gender === 'Female'} onChange={handleChange} /> Female</label>
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="Male" 
+              checked={form.gender === 'Male'} 
+              onChange={handleChange} 
+            /> 
+            Male
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="Female" 
+              checked={form.gender === 'Female'} 
+              onChange={handleChange} 
+            /> 
+            Female
+          </label>
         </div>
+
+        {/* Checkbox to agree to terms */}
         <label className="terms-label">
           <input
             type="checkbox"
@@ -120,11 +169,17 @@ function StudentRegistrationForm() {
           />
           I agree to the terms and conditions
         </label>
+
+        {/* Display error message if any */}
         {error && <p className="error">{error}</p>}
+        {/* Display success message if registration was successful */}
         {success && <p className="success">{success}</p>}
+
+        {/* Submit button */}
         <button type="submit">Register</button>
       </form>
 
+      {/* Section to show the list of registered students */}
       <div className="student-list">
         <h3>Registered Students</h3>
         <ul>
@@ -143,4 +198,5 @@ function StudentRegistrationForm() {
   );
 }
 
+// Exporting the component so it can be used in other files
 export default StudentRegistrationForm;

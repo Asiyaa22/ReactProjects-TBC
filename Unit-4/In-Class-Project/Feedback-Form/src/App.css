@@ -1,3 +1,4 @@
+/* Container for the app with max width, centered alignment, padding, and font */
 .app-container {
   max-width: 600px;
   margin: 0 auto;
