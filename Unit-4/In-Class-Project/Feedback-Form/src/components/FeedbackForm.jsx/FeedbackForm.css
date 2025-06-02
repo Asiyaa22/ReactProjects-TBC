@@ -1,0 +1,63 @@
+/* Container for the feedback form with top margin */
+.feedback-form-container {
+  margin-top: 20px;
+}
+
+/* Layout for the feedback form (vertical stacking) */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels inside the feedback form */
+.feedback-form label {
+  margin-bottom: 10px;
+}
+
+/* Input fields and textarea styles */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styles inside feedback form */
+.feedback-form button {
+  width: 100px;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Container for displaying feedback entries */
+.feedback-entries {
+  margin-top: 20px;
+  color: white;
+}
+
+/* Heading inside the feedback entries section */
+.feedback-entries h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Unordered list styling inside feedback entries */
+.feedback-entries ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual feedback entry styling */
+.feedback-entries li {
+  background-color: #e8f0fe;
+  border: 1px solid #c2d1f0;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: #222;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,85 @@
+/* Container for the entire form */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Layout for the registration form */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling in the registration form */
+.registration-form label {
+  margin-bottom: 10px;
+}
+
+/* Input field styles (text and email) */
+.registration-form input[type="text"],
+.registration-form input[type="email"] {
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Container for gender radio button group */
+.gender-group {
+  margin-bottom: 10px;
+}
+
+/* Label styling inside gender group */
+.gender-group label {
+  margin-right: 10px;
+}
+
+/* Styling for the terms and conditions label */
+.terms-label {
+  margin-bottom: 10px;
+}
+
+/* Submit button styles */
+button {
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Success message styling */
+.success {
+  color: green;
+  font-size: 0.9rem;
+}
+
+/* Student list container */
+.student-list {
+  margin-top: 20px;
+  color: #222; 
+}
+
+/* Heading inside student list */
+.student-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Individual student item styles */
+.student-list li {
+  background-color: #e6f0ff;
+  border: 1px solid #c2d1f0;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: #222;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
