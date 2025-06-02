@@ -1,5 +1,8 @@
 📘 Project Name: Student Registration Portal
 
+🌐 Hosted Output:
+🔗 https://studentregis.netlify.app/
+
 🎯 Objective:
 To build a functional student registration form using Unit 4 concepts – controlled components, form validation, and list rendering using useState. This project gives practical experience with handling forms, validating user input, and rendering dynamic data in React.
 
