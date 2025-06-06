@@ -1,3 +1,0 @@
-📘 Project Name: Live Character Count
-
-🔗 Hosted Project: https://livecharactercnt.netlify.app/
