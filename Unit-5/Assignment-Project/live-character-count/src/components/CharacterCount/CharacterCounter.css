@@ -1,0 +1,84 @@
+/* ==== Global Styles and Layout ==== */
+
+/* Set background color and center the content vertically and horizontally */
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==== Container Styling ==== */
+
+/* Main card container styling */
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ==== Title Styling ==== */
+
+/* Style for the main heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* ==== Input Section ==== */
+
+/* Margin to separate input from other content */
+.input-section {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Style for input label */
+.input-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Style for the textarea where user types */
+.input-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline-color: #4c9aff;
+}
+
+/* ==== Stats Display Section ==== */
+
+/* Container for displaying character stats */
+.stats-section {
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ==== Warning Message ==== */
+
+/* Style for the warning message when character count is too high */
+.warning {
+  color: #d32f2f;
+  font-weight: 600;
+  margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+📘 Project Name: To-Do List with Timer
+
+🔗 Hosted Project: https://todotasks001.netlify.app/
+
+🎯 Objective:
+Build an interactive to-do list application that tracks the time elapsed since each task was added. This project reinforces concepts from Unit 5, focusing on side effects, state management, and component communication in React.
+
+🧠 Concepts Covered (Unit 5):
+▫ useEffect Hook
+▫ Side Effects in Functional Components
+▫ useEffect with Dependencies
+▫ Cleanup Functions
+▫ Lifting State Up
+▫ Sharing State Between Components
+▫ Prop Drilling
+
+🛠️ Features to Implement:
+▫ Input field to add new tasks
+▫ Each task displays a timer showing time elapsed since addition
+▫ Tasks are displayed in a styled, centered card layout
+▫ Utilize useEffect to manage timers and cleanup
+▫ Implement state management using useState
+▫ Structure components for clarity and reusability
+
+📂 Component Structure:
+src/
+│
+├── App.jsx                         # Root component managing state and rendering child components
+├── index.js                        # Entry point of the application
+└── components/
+    ├── TaskForm.jsx                # Component for adding new tasks
+    ├── TaskList.jsx                # Component for displaying the list of tasks
+    ├── TaskItem.jsx                # Component for individual task items with timer
+    └── TodoStyles.css              # Styling for the to-do list application
+
+📦 Concepts Breakdown:
+🔹 useEffect – Manage timers for each task and handle cleanup
+🔹 Lifting State – App.jsx holds the main state and passes data/functions to child components
+🔹 Prop Drilling – Pass necessary data and functions from parent to child components
+
+✅ Sample Output:
++-------------------------------------------------+
+| Task: Buy Groceries                             |
+| Time Elapsed: 2 mins 34 secs                    |
++-------------------------------------------------+
+| Task: Finish Homework                           |
+| Time Elapsed: 0 mins 56 secs                    |
++-------------------------------------------------+
+
