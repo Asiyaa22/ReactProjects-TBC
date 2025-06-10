@@ -1,0 +1,42 @@
+/* Styles for the blog details page */
+
+.blog-details-container {
+  max-width: 600px; /* Limit width */
+  margin: 40px auto; /* Center and add vertical space */
+  padding: 20px; /* Inner spacing */
+  background-color: #f8f9fa; /* Container background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #222; /* Text color */
+  font-family: sans-serif; /* Font style */
+}
+
+.blog-details-container h2 {
+  margin-bottom: 10px; /* Space below title */
+  color: #2c3e50; /* Title color */
+}
+
+.blog-details-container p {
+  margin: 10px 0; /* Vertical spacing for paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+button {
+  margin-top: 20px; /* Space above button */
+  padding: 8px 16px; /* Button size */
+  background-color: #1e90ff; /* Button background */
+  color: white; /* Button text */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0d6efd; /* Darker on hover */
+}
+
+.loading {
+  text-align: center; /* Center loading text */
+  margin-top: 100px; /* Space from top */
+  font-size: 1.2rem; /* Larger font */
+}

@@ -1,0 +1,53 @@
+📘 Project Name: Blog App with Routing and Lifecycle
+
+🔗 Hosted Link:
+https://blog-post11.netlify.app/
+
+🎯 Objective:
+To build a simple yet dynamic blog application using class components and React Router, demonstrating the use of lifecycle methods and client-side routing. This project helps students understand component mounting, simulated data fetching, and dynamic routing in a class-based architecture.
+
+🧠 Concepts Covered (Unit 6):
+▫ Component Lifecycle in Class Components
+   - componentDidMount (for mock data fetch)
+   - componentDidUpdate 
+   - componentWillUnmount 
+
+▫ Routing in React
+   - React Router Basics (Route, Link, useParams, useNavigate)
+   - Dynamic Routing for individual blog pages
+
+▫ Mock API Simulation using static blog data
+▫ Clean UI structure and code organization
+
+🛠️ Features to Implement:
+▫ Home page with a list of blog post cards (fetched from mock data)
+▫ Each blog card contains title, author, and a "Read More" link
+▫ Clicking "Read More" navigates to `/user/:id` route to show full blog details
+▫ Use class-based component for individual blog details page with `componentDidMount`
+▫ Add minimal clean styling to make it visually appealing
+
+📂 Component Structure:
+src/
+│
+├── App.jsx                    # Main component with routing setup
+├── index.js  
+├── components/              # Entry point
+     └── styles
+             └── BlogCard.css       #card css
+              └── BlogDetails.css   # Class component for full blog view
+              └── Home.css          # Styling for home/blog cards
+├── data/
+│   └── blogData.js           # Contains mock blog content
+├── pages/
+│   ├── Home.jsx              # Home page that lists blog cards
+│   ├── BlogDetails.jsx        # blogdetails page
+
+📘 Expected Output:
+- Home Page shows a grid of blog cards
+- Each card has a working "Read More" link
+- On clicking, user is routed to individual blog detail page
+- Content is rendered using `componentDidMount`
+- Pages styled with basic but attractive UI
+
+🔗 Hosted Link (if available):
+https://tushar-shinde31.github.io/user-profile/
