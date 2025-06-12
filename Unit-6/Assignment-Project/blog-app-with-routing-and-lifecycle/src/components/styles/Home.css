@@ -1,0 +1,65 @@
+/* src/pages/Home.css */
+
+/* Styles for the Home page and blog list */
+
+.home-container {
+  padding: 40px 20px; /* Outer spacing */
+  text-align: center; /* Center text */
+  font-family: 'Segoe UI', sans-serif; /* Font style */
+  background-color: #f0f2f5; /* Page background */
+  min-height: 100vh; /* Full viewport height */
+}
+
+h1 {
+  margin-bottom: 30px; /* Space below heading */
+  color: #2c3e50; /* Heading color */
+}
+
+.blog-list {
+  display: flex; /* Flex layout for blog cards */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center cards */
+  gap: 20px; /* Space between cards */
+}
+
+.blog-card {
+  background: #fff; /* Card background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  width: 300px; /* Card width */
+  text-align: left; /* Left-align text */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: 0.3s; /* Smooth hover effect */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.blog-card h3 {
+  margin-bottom: 10px; /* Space below title */
+  color: #1e272e; /* Title color */
+}
+
+.blog-card p {
+  margin: 8px 0; /* Vertical spacing for paragraphs */
+  color: #4a5568; /* Paragraph color */
+  font-size: 0.95rem; /* Paragraph font size */
+}
+
+.blog-card p strong {
+  color: #2d3748; /* Strong text color */
+  margin-right: 5px; /* Space after strong text */
+}
+
+.read-more {
+  display: inline-block; /* Inline block for button-like link */
+  margin-top: 10px; /* Space above link */
+  color: #1e90ff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Bold link */
+}
+
+.read-more:hover {
+  text-decoration: underline; /* Underline on hover */
+}

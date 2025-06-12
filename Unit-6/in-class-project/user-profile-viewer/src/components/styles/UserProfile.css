@@ -1,0 +1,88 @@
+/* Outer container that centers the profile content */
+.profile-container {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fa; /* Light gray background */
+  padding: 20px;
+}
+
+/* Card-style box for user profile content */
+.profile-card {
+  background: #ffffff; /* White background for contrast */
+  max-width: 360px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08); /* Soft shadow for depth */
+  text-align: center;
+  animation: fadeIn 0.4s ease-out; /* Entry animation */
+}
+
+/* Circle avatar container */
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #ececec; /* Light gray placeholder */
+  border-radius: 50%; /* Circle shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px; /* Centered with spacing below */
+}
+
+/* User name styling */
+.profile-card h2 {
+  margin: 8px 0;
+  font-size: 1.6rem;
+  color: #2c3e50; /* Deep blue-gray */
+}
+
+/* User bio section */
+.bio {
+  font-size: 0.95rem;
+  color: #5e5e5e; /* Subtle gray */
+  margin-bottom: 20px;
+}
+
+/* Contact and profile information group */
+.info-group p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Back button styling */
+.back-btn {
+  margin-top: 24px;
+  background-color: #1976d2; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for the back button */
+.back-btn:hover {
+  background-color: #125ea3; /* Slightly darker blue */
+}
+
+/* Loading message style */
+.loader {
+  font-size: 1.2rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Fade-in animation for profile card */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
