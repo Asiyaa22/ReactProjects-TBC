@@ -1,0 +1,52 @@
+/* Root container styling, often the outermost wrapper around the app */
+#root {
+  max-width: 1280px;        /* Keeps layout readable by limiting width */
+  margin: 0 auto;           /* Horizontally centers the content */
+  padding: 2rem;            /* Adds breathing space inside */
+  text-align: center;       /* Centers all inner text/content */
+}
+
+/* Logo image sizing and interaction effects */
+.logo {
+  height: 6em;              /* Sets logo height */
+  padding: 1.5em;           /* Adds space around the logo */
+  will-change: filter;      /* Optimizes browser performance for the upcoming filter effect */
+  transition: filter 300ms; /* Smooth transition for filter changes */
+}
+
+/* Logo hover effect - applies a glowing blue filter */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* Special effect for React logo on hover – uses a React-themed color */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spin animation keyframes – rotates an element from 0 to 360 degrees */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Only plays animation if user has not requested reduced motion (accessibility) */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Continuous rotation effect */
+  }
+}
+
+/* Card component padding – could be reused for consistent spacing */
+.card {
+  padding: 2em;
+}
+
+/* Styling for documentation hint text */
+.read-the-docs {
+  color: #888; /* Light gray color for less emphasis */
+}

@@ -1,0 +1,5 @@
+🧑‍🎓 In Class Project
+📘 Project Name: User Auth Simulation with Context
+
+🚀 Live Demo:
+🔗 https://authsimula.netlify.app/

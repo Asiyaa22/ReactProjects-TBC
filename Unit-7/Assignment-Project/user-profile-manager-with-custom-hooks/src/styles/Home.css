@@ -1,0 +1,25 @@
+/*
+  Home Page Styles
+
+  - .home-container: Centers the content and sets a max width for the main container.
+  - .user-list: Displays user items in a flexible, wrapping row with spacing.
+  - .user-list p: Sets the text color of user list items to black.
+*/
+
+.home-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.user-list p{
+  color: black;
+}
