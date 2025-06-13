@@ -1,0 +1,77 @@
+/* Styles for the main navbar container */
+.navbar {
+  background: white;                             /* White background for a clean look */
+  padding: 1rem 2rem;                            /* Inner spacing: 1rem top/bottom, 2rem left/right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);      /* Subtle shadow for a slightly raised effect */
+  position: sticky;                              /* Keeps navbar at the top on scroll */
+  top: 0;
+  z-index: 1000;                                 /* Ensures navbar stays above other content */
+}
+
+/* Inner flex container to align brand and links */
+.navbar-container {
+  max-width: 1200px;                             /* Limit navbar width for better readability */
+  margin: 0 auto;                                /* Center the navbar horizontally */
+  display: flex;                                 /* Flex layout for horizontal alignment */
+  justify-content: space-between;               /* Space between brand and links */
+  align-items: center;                           /* Vertically center items */
+}
+
+/* Branding (site name/logo) styling */
+.navbar-brand {
+  font-size: 1.5rem;                             /* Make brand text larger */
+  font-weight: 600;                              /* Slightly bold for emphasis */
+  color: #3b82f6;                                /* Blue color that matches your app’s theme */
+  text-decoration: none;                         /* Remove underline from link */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;                                   /* Space between icon and text */
+}
+
+/* Container for all nav links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;                                   /* Space between each link */
+}
+
+/* Shared styles for all navigation links */
+.nav-link {
+  color: #4b5563;                                /* Slate gray text */
+  text-decoration: none;
+  font-weight: 500;                              /* Semi-bold for visibility */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;                            /* Rounded corners */
+  transition: all 0.3s ease;                     /* Smooth hover transition */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;                                   /* Space between icon and text */
+}
+
+/* Link hover effect */
+.nav-link:hover {
+  color: #3b82f6;                                /* Highlight text in blue */
+  background: #f3f4f6;                           /* Light gray background */
+}
+
+/* Style for the link that's currently active (matched route) */
+.nav-link.active {
+  color: #3b82f6;
+  background: #eff6ff;                           /* Softer blue background to indicate current page */
+}
+
+/* Box displaying logged-in user's name with icon */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;                           /* Light gray background */
+  border-radius: 6px;
+  color: #4b5563;
+}
+
+/* Just the user name text inside the .user-info box */
+.user-info .user-name {
+  font-weight: 500;
+}

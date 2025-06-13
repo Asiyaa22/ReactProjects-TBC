@@ -1,0 +1,97 @@
+/* === PAGE CONTAINER === */
+.page {
+  max-width: 400px;                       /* Limits the width of the page content */
+  margin: 3rem auto;                      /* Centers the page with margin above/below */
+  text-align: center;                     /* Center-aligns the content inside */
+  padding: 2rem;                          /* Adds spacing inside the box */
+  background: white;                      /* White background for a clean look */
+  border-radius: 12px;                    /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+}
+
+/* === PAGE TITLE === */
+.page h2 {
+  color: #333;                            /* Dark gray text for contrast */
+  margin-bottom: 1.5rem;                  /* Space below the heading */
+  font-size: 1.8rem;                      /* Larger font for the title */
+}
+
+/* === INPUT GROUP WRAPPER === */
+.input-group {
+  position: relative;                     /* Allows absolute positioning of icon inside */
+  margin-bottom: 1.5rem;
+}
+
+/* === TEXT INPUT FIELD === */
+.input-group input {
+  width: 80%;                             /* Makes the input field responsive */
+  padding: 0.8rem 1rem;                   /* Vertical and horizontal spacing inside input */
+  padding-left: 2.5rem;                   /* Extra left padding for icon space */
+  border: 2px solid #e2e8f0;              /* Light border color */
+  border-radius: 8px;                     /* Rounded corners */
+  font-size: 1rem;
+  transition: all 0.3s ease;              /* Smooth transition for focus state */
+}
+
+/* === FOCUS EFFECT ON INPUT === */
+.input-group input:focus {
+  outline: none;                          /* Removes default browser outline */
+  border-color: #3b82f6;                  /* Highlight border on focus */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Soft blue glow */
+}
+
+/* === ICON INSIDE INPUT FIELD === */
+.input-group .icon {
+  position: absolute;
+  left: 1.2rem;                           /* Positions icon inside the input */
+  top: 35%;
+  transform: translateY(-50%);            /* Vertically centers icon */
+  color: #94a3b8;                         /* Muted gray-blue tone */
+}
+
+/* === BUTTON STYLES (Common) === */
+.btn {
+  display: inline-flex;                   /* Align icon and text in a row */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;                            /* Space between icon and text */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;              /* Hover transition effect */
+}
+
+/* === PRIMARY BUTTON (Blue) === */
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #2563eb;             /* Darker blue on hover */
+}
+
+/* === DANGER BUTTON (Red) === */
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+}
+.btn-danger:hover {
+  background-color: #dc2626;             /* Deeper red on hover */
+}
+
+/* === WELCOME MESSAGE === */
+.welcome-message {
+  margin-bottom: 2rem;
+  color: #1f2937;                         /* Dark text for good contrast */
+  font-size: 1.2rem;
+}
+
+/* === ACTION BUTTON CONTAINER === */
+.dashboard-actions {
+  display: flex;
+  gap: 1rem;                              /* Space between buttons */
+  justify-content: center;               /* Center the button group */
+}

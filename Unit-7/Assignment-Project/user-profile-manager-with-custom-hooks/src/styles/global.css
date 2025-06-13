@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+/* 
+  Global Styles for Profile Manager
+
+  - Sets default body margin, font, background, and text color.
+  - Styles anchor tags with no underline and primary color.
+  - Styles buttons with primary color, white text, padding, rounded corners, and hover effect.
+*/
+
+body {
+  /* Remove default margin and set base font and background */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+a {
+  /* Remove underline and set link color */
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+button {
+  /* Primary button styles */
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  /* Darker background on hover */
+  background-color: #084298;
+}
+button {
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #084298;
+}

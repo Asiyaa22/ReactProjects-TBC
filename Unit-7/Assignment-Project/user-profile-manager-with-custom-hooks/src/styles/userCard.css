@@ -1,0 +1,80 @@
+/* === WRAPPER FOR THE ENTIRE CARD === */
+.user-card {
+  width: 280px;                          /* Fixed width for uniform layout */
+  padding: 24px;                         /* Space inside the card */
+  background-color: white;              /* Clean white background */
+  border-radius: 12px;                  /* Smooth, rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft outer shadow */
+  transition: all 0.3s ease;            /* Smooth animation for any change */
+  display: flex;                        /* Flex layout for stacking elements */
+  flex-direction: column;
+  align-items: center;                  /* Center everything horizontally */
+  gap: 16px;                            /* Space between elements */
+  justify-content: center;             /* Vertically center content */
+}
+
+/* Subtle hover effect to lift card visually */
+.user-card:hover {
+  transform: translateY(-5px);          /* Move card slightly upwards */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
+}
+
+/* === CIRCLE AVATAR PLACEHOLDER === */
+.user-card__avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #f3f4f6;            /* Light gray background */
+  border-radius: 50%;                   /* Makes it a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;              /* Center icon inside */
+  color: #4b5563;                       /* Muted icon color */
+}
+
+/* === CONTAINER FOR TEXT CONTENT === */
+.user-card__content {
+  width: 100%;
+  text-align: center;                   /* Align text in the center */
+}
+
+/* === USER NAME === */
+.user-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #111827;                       /* Bold, dark color for contrast */
+  font-weight: 600;
+}
+
+/* === ROLE INFO (Developer, Manager, etc.) === */
+.user-card__role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;                             /* Space between icon and text */
+  margin-bottom: 16px;
+  color: #6b7280;                       /* Subtle text color */
+}
+
+.user-card__role p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* === LINK BUTTON TO VIEW PROFILE === */
+.user-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  text-decoration: none;               /* No underline on link */
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.user-card__link:hover {
+  background-color: #e5e7eb;           /* Slightly darker hover background */
+  color: #111827;                      /* Darker text on hover */
+}

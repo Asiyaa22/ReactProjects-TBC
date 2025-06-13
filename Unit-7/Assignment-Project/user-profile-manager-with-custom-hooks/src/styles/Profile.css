@@ -1,0 +1,107 @@
+/* === OUTER CONTAINER FOR PROFILE PAGE === */
+.profile-container {
+  max-width: 800px;                       /* Sets width limit for readable layout */
+  margin: 40px auto;                      /* Centers the container with margin above/below */
+  background-color: #ffffff;             /* White background for clean UI */
+  border-radius: 16px;                   /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft shadow around the box */
+  overflow: hidden;                      /* Clips any overflowing content */
+}
+
+/* === TOP BAR WITH BACK BUTTON === */
+.profile-header {
+  padding: 20px;
+  border-bottom: 1px solid #f3f4f6;      /* Subtle divider line at the bottom */
+}
+
+/* === STYLING FOR "BACK TO HOME" BUTTON === */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;                              /* Space between icon and text */
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  color: #4b5563;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;             /* Smooth hover effect */
+}
+.back-button:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+/* === MAIN CONTENT AREA BELOW HEADER === */
+.profile-content {
+  padding: 40px;
+  text-align: center;
+}
+
+/* === ROUND AVATAR HOLDER (ICON INSIDE CIRCLE) === */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #f3f4f6;
+  border-radius: 50%;                   /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: #4b5563;
+}
+
+/* === USER'S NAME === */
+.profile-content h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+/* === GRID CONTAINER FOR USER DETAILS === */
+.profile-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive layout */
+  gap: 24px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === INDIVIDUAL INFO BLOCK (e.g., Role, Email) === */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+.info-item:hover {
+  background-color: #f3f4f6;            /* Slight highlight on hover */
+}
+
+/* === ICON IN EACH INFO BLOCK === */
+.info-item svg {
+  color: #4b5563;
+  flex-shrink: 0;                       /* Prevent icon from shrinking on small screens */
+}
+
+/* === LABEL ABOVE EACH INFO VALUE (like “Role”) === */
+.info-label {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* === ACTUAL VALUE DISPLAYED (like “Developer”) === */
+.info-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+  font-weight: 500;
+}
