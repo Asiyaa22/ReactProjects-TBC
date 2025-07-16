@@ -7,15 +7,15 @@ function App() {
       <h1>Mini Image Feed</h1>
       <Post 
         author="Vinay" 
-        image="https://source.unsplash.com/random/300x200?coding" 
+        image="/img13.jpeg" 
       />
       <Post 
         author="Tushar" 
-        image="https://source.unsplash.com/random/300x200?developer" 
+        image="/img17.jpeg" 
       />
       <Post 
         author="Asiya" 
-        image="https://source.unsplash.com/random/300x200?technology" 
+        image="/board1.png" 
       />
     </div>
   );

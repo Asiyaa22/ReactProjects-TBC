@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Note from "./components/Notes";
+import Input from "./components/Input";
 import "./notesApp.css";
 
 const App = () => {
@@ -9,10 +10,12 @@ const App = () => {
     { id: 2, text: "Welcome to the notes app!" },
   ]);
 
-  const addNote = () => {
+  const addNote = (text) => {
+  if (text.trim() === "") return;
+
     const newNote = {
       id: notes.length + 1,
-      text: `New Note ${notes.length + 1}`,
+      text,
     };
     setNotes([...notes, newNote]);
   };
@@ -24,10 +27,11 @@ const App = () => {
         {notes.map((note) => (
           <Note key={note.id} text={note.text} />
         ))}
-        <button className="add-button" onClick={addNote}>+</button>
       </div>
+      <Input onAdd={addNote}/>
     </div>
   );
 };
+
 
 export default App;
