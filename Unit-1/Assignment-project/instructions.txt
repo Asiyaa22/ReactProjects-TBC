@@ -1,6 +1,8 @@
 🎬 React Assignment – Unit 1
 Project Title: Favorite Movie Banner
 
+Project Hosted Link : https://movie-banner.onrender.com
+
 🧠 Objective
 Build a simple React application that displays a banner for your favorite movie using only Unit 1 concepts:
 

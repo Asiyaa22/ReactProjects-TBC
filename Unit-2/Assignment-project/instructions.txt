@@ -1,5 +1,7 @@
 📘 Project Name: Notes App
 
+Project Hosted link : https://notes-app-mf7s.onrender.com/
+
 🎯 Objective:
 To create a basic Notes App using only Unit 2 topics – components, props, reusability, and state management with useState. This project will help you understand how data is managed and passed between components in React.
 
